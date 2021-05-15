@@ -102,10 +102,7 @@ a {
 }
 .entry-title,
 .entry-title a {
-	padding: 0;
 	color: #ddd;
-	font-weight: normal;
-	font-size: 32px;
 }
 .entry-title a:hover,
 .entry-title a:focus,
@@ -121,8 +118,6 @@ a {
 .comment-content h2,
 .comment-content h3 {
 	color: #ddd;
-	font-family: "Warnock Pro Light", Helvetica, Arial, sans-serif;
-	font-weight: normal;
 }
 .entry-content table,
 .comment-content table {
