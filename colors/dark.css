@@ -6,11 +6,13 @@
 ----------------------------------------------- */
 
 body {
-	background: #1d1d1d;
+	background: #060606;
 	color: #bbb;
 }
 #page {
 	background: #0f0f0f;
+	background-color: #111111;
+
 }
 
 /* Headings */
@@ -65,7 +67,7 @@ a {
 #site-title a:active {
 }
 #site-description {
-	color: #858585;
+	color: rgb(200,200,200);;
 }
 #branding #s {
 	background-color: #ddd;
@@ -76,15 +78,21 @@ a {
 ----------------------------------------------- */
 
 #access {
-	background: #333; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#383838, #272727);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#383838), to(#272727)); /* older webkit syntax */
+	background: #222222; /* Show a solid color for older browsers */
+	
+	/*background: -moz-linear-gradient(#383838, #272727);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#383838), to(#272727));
 	background: -webkit-linear-gradient(#383838, #272727);
 	border-bottom: 1px solid #222;
+	*/
 }
 
 /* =Content
 ----------------------------------------------- */
+
+#content nav {
+	padding: 0;
+}
 
 .page-title {
 	color: #ccc;
@@ -92,12 +100,12 @@ a {
 .hentry {
 	border-color: #222;
 }
-.entry-title {
-	color: #ddd;
-}
 .entry-title,
 .entry-title a {
+	padding: 0;
 	color: #ddd;
+	font-weight: normal;
+	font-size: 32px;
 }
 .entry-title a:hover,
 .entry-title a:focus,
@@ -106,11 +114,15 @@ a {
 .entry-meta {
 	color: #999;
 }
-.entry-content h1,
-.entry-content h2,
-.comment-content h1,
-.comment-content h2 {
-	color: #fff;
+.entry-content h1, 
+.entry-content h2, 
+.entry-content h3,
+.comment-content h1, 
+.comment-content h2,
+.comment-content h3 {
+	color: #ddd;
+	font-family: "Warnock Pro Light", Helvetica, Arial, sans-serif;
+	font-weight: normal;
 }
 .entry-content table,
 .comment-content table {
@@ -144,6 +156,19 @@ a {
 	background: #999;
 	color: #000;
 }
+
+/* for custom blog template bold content color: */
+.blog #content strong {
+	/*color: #69a4d3;*/
+	color: #9ebbd3;
+}
+
+/* keep link color the same */
+.blog #content a strong {
+	color: #69a4d3;
+}
+
+
 
 /* Images */
 .wp-caption {
