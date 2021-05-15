@@ -14,10 +14,6 @@ Text Domain: twentyeleven
 /* =Reset default browser CSS. Based on work by Eric Meyer.
 -------------------------------------------------------------- */
 
-@font-face {
-    font-family: Warnock Pro;
-    src: url('DemoFont.ttf');
-}
 
 
 html, body, div, span, applet, object, iframe,
