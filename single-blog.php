@@ -1,21 +1,16 @@
 <?php
 /**
- * Template for displaying all single posts
+ * special template for displaying posts in the 'blog' category
  *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
  */
 
-get_header(); ?>
+// use the header-blog.php for header
+get_header("blog"); ?>
 
-		<div id="primary">
+		<div id="primary" >
 			<div id="content" role="main">
 
-				<?php
-				while ( have_posts() ) :
-					the_post();
-					?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
 					<nav id="nav-single">
 						<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
@@ -31,5 +26,6 @@ get_header(); ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

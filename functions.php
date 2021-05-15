@@ -881,3 +881,60 @@ function twentyeleven_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentyeleven_widget_tag_cloud_args' );
+
+//################### CUSTOM ADDED ##########################
+
+/** function to assign posts in the 'blog' category to a blog specific template.
+ * I'm doing this INSTEAD of creating a custom post type. the post type is still 
+ * 'post'. but if they belong to the 'blog' category they get a different post 
+ * template.
+ */
+add_action('template_include', 'load_single_template');
+  function load_single_template($template) {
+    $new_template = '';
+
+    // single post template
+    if( is_single() ) {
+      global $post;
+      // 'blog' is a category slub
+
+      if( has_term('blog', 'category', $post) ) {
+        // use template file single-blog.php
+        $new_template = locate_template(array('single-blog.php' ));
+      }
+    }
+	
+    return ('' != $new_template) ? $new_template : $template;
+  }
+
+  
+/* Allow upload of unidentified file types */
+function add_upload_mime_types( $mimes ) {
+    if ( function_exists( 'current_user_can' ) )
+        $unfiltered = $user ? user_can( $user, 'unfiltered_html' ) : current_user_can( 'unfiltered_html' );
+    if ( !empty( $unfiltered ) ) {
+        $mimes['apk'] = 'application/vnd.android.package-archive';
+    }
+    return $mimes;
+}
+add_filter( 'upload_mimes', 'add_upload_mime_types' );
+
+
+/* Suppress .singular class so that sidebar can work within the "single page" page.php template */
+add_filter('body_class', 'blacklist_body_class', 20, 2);
+function blacklist_body_class($wp_classes, $extra_classes) {
+if( is_single() || is_page() ) :
+// List of the classes to remove from the WP generated classes
+$blacklist = array('singular');
+// Filter the body classes
+  foreach( $blacklist as $val ) {
+    if (!in_array($val, $wp_classes)) : continue;
+    else:
+      foreach($wp_classes as $key => $value) {
+      if ($value == $val) unset($wp_classes[$key]);
+      }
+    endif;
+  }
+endif;   // Add the extra classes back untouched
+return array_merge($wp_classes, (array) $extra_classes);
+}
