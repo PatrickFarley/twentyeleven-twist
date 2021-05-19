@@ -40,7 +40,7 @@ Text Domain: twentyeleven
 
 @font-face {
 	font-family: "Warnock Pro Light Display";
-	src: url("fonts/warnockpro-lightdisp.otf") format("opentype");
+	src: url("fonts/WarnockPro-LightDisp.otf") format("opentype");
 }
 @font-face {
 	font-family: "Warnock Pro Light";
@@ -664,12 +664,12 @@ a:hover {
 
 #site-title a { /* the element of 'a' type with an id of "site-title' */
 	font-weight: normal;
-	font-family: "Warnock Pro Light Display", "Arial", "Palatino Linotype", "Times New Roman";
+	font-family: "Warnock Pro Light Display", "Palatino Linotype", "Times New Roman", serif;
 }
 .blog .entry-title,
 .blog .entry-title a {
 	font-weight: normal;
-	font-family: "Warnock Pro Light", "Arial", "Palatino Linotype", "Times New Roman";
+	font-family: "Warnock Pro Light", "Palatino Linotype", "Times New Roman", serif;
 }
 
 
