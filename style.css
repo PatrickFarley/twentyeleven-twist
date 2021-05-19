@@ -55,32 +55,32 @@ Text Domain: twentyeleven
 
 @font-face {
 	font-family: "Fakt Pro Lt";
-	src: url("fonts/faktprolight.otf") format("opentype");
+	src: url("fonts/FaktProLight.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Fakt Pro Lt";
-	src: url("fonts/faktprolightitalic.otf") format("opentype");
+	src: url("fonts/FaktProLightItalic.otf") format("opentype");
 	font-weight: normal;
 	font-style: italic;
 }
 @font-face {
 	font-family: "Fakt Pro Lt";
-	src: url("fonts/faktprobold.otf") format("opentype");
+	src: url("fonts/FaktProBold.otf") format("opentype");
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Fakt Pro Lt";
-	src: url("fonts/faktprobolditalic.otf") format("opentype");
+	src: url("fonts/FaktProBoldItalic.otf") format("opentype");
 	font-weight: bold;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Fakt Pro Nor";
-	src: url("fonts/faktpronormal.otf") format("opentype");
+	src: url("fonts/FaktProNormal.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
