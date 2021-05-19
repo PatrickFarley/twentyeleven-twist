@@ -197,20 +197,8 @@ so it "floats" above the nav bar inside the header element */
 }
 #secondary {
 	float: right;
-	margin-right: 7.6%;
+	margin-right: 3%;
 	width: 18.8%;
-}
-/* for custom blog sidebar: float to right */
-.blog #secondary {
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    width: 18%;
-}
-/* for blog template sidebar: reduce width of
- * search bar a little */ 
-.blog #secondary aside {
-    width: 80%;
 }
 
 
@@ -298,14 +286,14 @@ so it "floats" above the nav bar inside the header element */
 	width: 100%;
 }
 .left-sidebar #content {
-	margin: 0 7.6% 0 34%;
-	width: 58.4%;
+	margin: 0 3% 0 25%;
+	width: 60%;
 }
 .left-sidebar #secondary {
 	float: left;
-	margin-left: 7.6%;
+	margin-left: 3%;
 	margin-right: 0;
-	width: 18.8%;
+	width: 20%;
 }
 
 /* One column */
