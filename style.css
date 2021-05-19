@@ -85,6 +85,14 @@ Text Domain: twentyeleven
 	font-style: normal;
 }
 
+/* Set variables
+----------------------------------------------*/
+
+:root {
+	--accent: #69a4d3;
+	--faintaccent: #9ebbd3;
+}
+
 /* =Reset default browser CSS. Based on work by Eric Meyer.
 -------------------------------------------------------------- */
 
@@ -597,7 +605,7 @@ input#searchsubmit {
 
 /* Links */
 a {
-	color: #1982d1;
+	color: var(--accent);
 	text-decoration: none;
 }
 a:focus,
@@ -917,7 +925,6 @@ a:hover {
 .blog .comment-content h2,
 .blog .comment-content h3 {
 	margin: 0 0 .8125em;
-	font-family: "Warnock Pro", "Palatino Linotype", "Times New Roman", serif;
 	font-weight: normal;
 }
 

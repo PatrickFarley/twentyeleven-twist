@@ -2,16 +2,21 @@
 	A dark color scheme for Twenty Eleven
 */
 
+/* Variables
+------------------------------------*/
+:root {
+	--bgcolor: #060606;
+}
+
 /* =Global
 ----------------------------------------------- */
 
 body {
-	background: #060606;
+	background: var(--bgcolor);
 	color: #bbb;
 }
 #page {
-	background: #0f0f0f;
-	background-color: #111111;
+	background: var(--bgcolor);
 
 }
 
@@ -25,7 +30,7 @@ blockquote cite {
 	color: #999;
 }
 pre {
-	background: #0b0b0b;
+	background: var(--bgcolor);
 }
 code, kbd {
 	font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
@@ -57,7 +62,7 @@ a {
 ----------------------------------------------- */
 
 #branding {
-	border-top: 2px solid #0a0a0a;
+	border-top: 2px solid var(--bgcolor);
 }
 #site-title a {
 	color: #eee;
@@ -158,13 +163,12 @@ a {
 
 /* for custom blog template bold content color: */
 .blog #content strong {
-	/*color: #69a4d3;*/
-	color: #9ebbd3;
+	color: var(--faintaccent);
 }
 
 /* keep link color the same */
 .blog #content a strong {
-	color: #69a4d3;
+	color: var(--accent);
 }
 
 
@@ -211,7 +215,7 @@ a:active img[class*="wp-image-"] {
 
 /* Author Info */
 .singular #author-info {
-	background: #060606;
+	background: var(--bgcolor);
 	border-color: #222;
 }
 .archive #author-info {
@@ -278,7 +282,7 @@ a:active img[class*="wp-image-"] {
 /* =error404
 ----------------------------------------------- */
 .error404 #main #searchform {
-	background: #060606;
+	background: var(--bgcolor);
 	border-color: #222;
 }
 
@@ -292,7 +296,7 @@ h1.showcase-heading {
 
 /* Intro */
 article.intro {
-	background: #060606;
+	background: var(--bgcolor);
 }
 article.intro .entry-content {
 	color: #eee;
@@ -405,17 +409,17 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 ----------------------------------------------- */
 
 .image-attachment div.attachment {
-	background: #060606;
+	background: var(--bgcolor);
 	border-color: #222;
 }
 .image-attachment div.attachment a img {
-	border-color: #060606;
+	border-color: var(--bgcolor);
 }
 .image-attachment div.attachment a:focus img,
 .image-attachment div.attachment a:hover img,
 .image-attachment div.attachment a:active img {
 	border-color: #2c2c2c;
-	background: #0f0f0f;
+	background: var(--bgcolor);
 }
 
 
@@ -469,7 +473,7 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 	color: #555;
 }
 .commentlist > li.comment {
-	background: #090909;
+	background: var(--bgcolor);
 	border-color: #222;
 }
 .commentlist .children li.comment {
@@ -603,7 +607,7 @@ li.bypostauthor a.comment-reply-link:active {
 
 /* Site Generator Line */
 #site-generator {
-	background: #060606;
+	background: var(--bgcolor);
 	border-color: #000;
 }
 
