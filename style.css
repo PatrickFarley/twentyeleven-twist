@@ -10,10 +10,83 @@ Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-backgro
 Text Domain: twentyeleven
 */
 
+/* Import fonts.
+--------------------------------*/
+
+@font-face {
+	font-family: "Warnock Pro";
+	src: url("fonts/warnockpro.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Warnock Pro";
+	src: url("fonts/warnockpro-bold.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Warnock Pro";
+	src: url("fonts/warnockpro-it.otf") format("opentype");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Warnock Pro";
+	src: url("fonts/warnockpro-boldit.otf") format("opentype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Warnock Pro Light Display";
+	src: url("fonts/warnockpro-lightdisp.otf") format("opentype");
+}
+@font-face {
+	font-family: "Warnock Pro Light";
+	src: url("fonts/warnockpro-light.otf") format("opentype");
+}
+@font-face {
+	font-family: "Warnock Pro Caption";
+	src: url("fonts/warnockpro-capt.otf") format("opentype");
+}
+
+
+
+@font-face {
+	font-family: "Fakt Pro Lt";
+	src: url("fonts/faktprolight.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Fakt Pro Lt";
+	src: url("fonts/faktprolightitalic.otf") format("opentype");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Fakt Pro Lt";
+	src: url("fonts/faktprobold.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Fakt Pro Lt";
+	src: url("fonts/faktprobolditalic.otf") format("opentype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Fakt Pro Nor";
+	src: url("fonts/faktpronormal.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* =Reset default browser CSS. Based on work by Eric Meyer.
 -------------------------------------------------------------- */
-
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -350,14 +423,15 @@ so it "floats" above the nav bar inside the header element */
 /* =Global
 ----------------------------------------------- */
 
-body, input, textarea {
+body, 
+input, 
+textarea {
 	color: #373737;
-	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 300;
 	line-height: 1.625;
+	font-family: "Fakt Pro Lt","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-body.blog {
-	font-size: 1.2rem;
+.blog article.post,
+.blog #content {
 	font-family: "Warnock Pro", "Palatino Linotype", "Times New Roman", serif;
 }
 body {
@@ -576,22 +650,18 @@ a:hover {
 #site-title a {
 	color: #111;
 	font-size: 60px;
-	font-weight: bold;
 	line-height: 36px;
 	text-decoration: none;
 }
 
-/*non-blog entry titles*/
-.entry-title a{
+#site-title a { /* the element of 'a' type with an id of "site-title' */
 	font-weight: normal;
-	font-family: "Atlas", "Helvetica Neue", "Helvetica", "Arial";
+	font-family: "Warnock Pro Light Display", "Arial", "Palatino Linotype", "Times New Roman";
 }
-
-#site-title a, /* the element of 'a' type with an id of "site-title' */
 .blog .entry-title,
 .blog .entry-title a {
 	font-weight: normal;
-	font-family: "Warnock Pro Light", "Warnock Pro", "Palatino Linotype", "Times New Roman";
+	font-family: "Warnock Pro Light", "Arial", "Palatino Linotype", "Times New Roman";
 }
 
 
@@ -803,7 +873,6 @@ a:hover {
 .entry-title {
 	clear: both;
 	color: #222;
-	font-size: 26px;
 	font-weight: bold;
 	line-height: 1.5em;
 	padding-bottom: .3em;
@@ -815,7 +884,7 @@ a:hover {
 	color: #222;
 	text-decoration: none;
 	font-weight: normal;
-	font-size: 32px;
+	font-size: 1.6rem;
 }
 .entry-title a:hover,
 .entry-title a:focus,
@@ -841,29 +910,25 @@ a:hover {
 .entry-content .more-link {
 	white-space: nowrap;
 }
-.entry-content h1, 
-.entry-content h2, 
-.entry-content h3,
-.comment-content h1, 
-.comment-content h2,
-.comment-content h3 {
-	color: #000;
-	font-weight: bold;
+.blog .entry-content h1, 
+.blog .entry-content h2, 
+.blog .entry-content h3,
+.blog .comment-content h1, 
+.blog .comment-content h2,
+.blog .comment-content h3 {
 	margin: 0 0 .8125em;
-	font-family: "Warnock Pro Light", "Warnock Pro", "Palatino Linotype", "Times New Roman";
+	font-family: "Warnock Pro", "Palatino Linotype", "Times New Roman", serif;
 	font-weight: normal;
 }
-.entry-content h3,
-.comment-content h3 {
-	font-size: 120%;
-	line-height: 2.6em;
-	margin: 0 0 .8em;
-}
+
 .entry-content h1 {	
-	font-size: 150%;
+	font-size: 1.5em;
 }
 .entry-content h2 {	
-	font-size: 130%;
+	font-size: 1.35em;
+}
+.entry-content h3{
+	font-size: 1.2em;
 }
 
 
@@ -1211,7 +1276,7 @@ article.format-status .entry-content {
 }
 /* for category archive page title styling: */
 #cat_title {
-    font-size: 32px;
+    font-size: 1.7rem;
 }
 blockquote.pull {
 	font-size: 21px;
@@ -1889,11 +1954,9 @@ video {
 }
 .widget-title {
 	color: #666;
-	font-size: 10px;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 	line-height: 2.6em;
-	text-transform: uppercase;
 }
 .widget ul {
 	font-size: 15px;
