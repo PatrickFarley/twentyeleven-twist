@@ -169,18 +169,59 @@ body {
 }
 #primary {
 	float: left;
-	margin: 0 -26.4% 0 0;
-	width: 100%;
 }
-
 #content {
-	margin: 0 34% 0 7.6%;
+	margin: 0 29% 0 5;
 	width: 58.4%;
 }
+
 #secondary {
 	float: right;
-	margin-right: 3%;
-	width: 18.8%;
+	margin-right: 5%;
+	width: 19%;
+}
+
+
+/* Right Content */
+/* primary and secondary each float to their sides. Primary gets 
+rendered first; it cedes enough negative margin to secondary. When the
+window is crunched, secondary slips down and primary takes full width.
+Secondary defines its own margins. 
+Content is everything inside primary. It needs wide margins to accomodate secondary overlapping into primary. Its margins get reset automatically when the screen is resized too far.
+Percents are of the parent frame. */
+.left-sidebar #primary {
+	float: right;
+	margin-left: -30%;
+	margin-right: 0;
+	width: 100%;
+}
+.left-sidebar #content {
+	margin: 0 7.6% 0 30%;
+}
+.left-sidebar #secondary {
+	float: left;
+	margin-left: 5%;
+	margin-right: 0;
+	width: 20%;
+}
+
+
+/* One column */
+.one-column #page {
+	max-width: 690px;
+}
+.one-column #content {
+	margin: 0 7.6%;
+	width: auto;
+}
+.one-column #nav-below {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1.625em;
+}
+.one-column #secondary {
+	float: none;
+	margin: 0 7.6%;
+	width: auto;
 }
 
 
@@ -261,40 +302,6 @@ body {
 	margin-right: auto;
 }
 
-/* Right Content */
-.left-sidebar #primary {
-	float: right;
-	margin: 0 0 0 -26.4%;
-	width: 100%;
-}
-.left-sidebar #content {
-	margin: 0 3% 0 25%;
-	width: 60%;
-}
-.left-sidebar #secondary {
-	float: left;
-	margin-left: 3%;
-	margin-right: 0;
-	width: 20%;
-}
-
-/* One column */
-.one-column #page {
-	max-width: 690px;
-}
-.one-column #content {
-	margin: 0 7.6%;
-	width: auto;
-}
-.one-column #nav-below {
-	border-bottom: 1px solid #ddd;
-	margin-bottom: 1.625em;
-}
-.one-column #secondary {
-	float: none;
-	margin: 0 7.6%;
-	width: auto;
-}
 /* Simplify the showcase template */
 .one-column .page-template-showcase-php section.recent-posts {
 	float: none;
