@@ -163,18 +163,6 @@ body {
 	top: 0px; 
 	margin: 0 1em;
 }
-/* For custom blog template header: */
-/* make position of the hgroup (title and tagline) relative,
-so it "floats" above the nav bar inside the header element */
-.blog #branding hgroup {
-    position: unset;
-    top: unset;
-}
-/* for custom blog template content: */ 
-.blog #content {
-    margin: 0 24% 0 7.6%;
-    width: 68.4%;
-}
 
 #access div {
 	margin: 0 7.6%;
@@ -184,13 +172,7 @@ so it "floats" above the nav bar inside the header element */
 	margin: 0 -26.4% 0 0;
 	width: 100%;
 }
-/* for custom blog primary: justify left
- * and change colors */
-.blog #primary {
-    float: left;
-    margin: 0 -18% 0 0;
-    width: 100%;
-}
+
 #content {
 	margin: 0 34% 0 7.6%;
 	width: 58.4%;
