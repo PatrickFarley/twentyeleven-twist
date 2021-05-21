@@ -50,6 +50,9 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 
+<!-- script to track traffic with W3Counter -->
+<script src="https://www.w3counter.com/tracker.js?id=126668"></script>
+
 <?php
 	/*
 	 * We add some JavaScript to pages with the comment form
@@ -95,7 +98,7 @@
 					}
 					?>
 
-<!--			
+
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<?php
 					/*
@@ -120,13 +123,16 @@
 					<img src="<?php header_image(); ?>" width="<?php echo esc_attr( $header_image_width ); ?>" height="<?php echo esc_attr( $header_image_height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 				<?php endif; // end check for featured image or standard header ?>
 			</a>
--->
 
 			<?php endif; // end check for removed header image ?>
 
 			<?php
 				// Has the text been hidden?
 				if ( 'blank' == get_header_textcolor() ) :
+					$header_image_class = '';
+				if ( $header_image ) {
+					$header_image_class = ' with-image';
+				}
 			?>
 				<div class="only-search<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
 				<?php get_search_form(); ?>
