@@ -642,7 +642,7 @@ a:hover {
 
 #site-title a { /* the element of 'a' type with an id of "site-title' */
 	font-weight: normal;
-	font-family: "Warnock Pro Light Display", "Palatino Linotype", "Georgia" "Times New Roman", serif;
+	font-family: "Warnock Pro Light Display", "Palatino Linotype", "Georgia", "Times New Roman", serif;
 }
 .blog .entry-title,
 .blog .entry-title a {
@@ -1935,7 +1935,7 @@ video {
 	-moz-hyphens: auto;
 	hyphens: auto;
 	clear: both;
-	margin: 0 0 2.2em;
+	margin: 0 0 1.1em;
 }
 .widget-title {
 	color: #666;
@@ -2451,6 +2451,14 @@ p.comment-form-comment {
 	border-top: 1px solid #ddd;
 	padding: 1.625em 7.6%;
 	overflow: hidden;
+	text-align: center;
+}
+
+.footer-title {
+	text-align: center;
+	font-size: 1.6rem;
+	font-family: "Warnock Pro Light Display", "Palatino Linotype", "Georgia", "Times New Roman", serif;
+	color: #888;
 }
 
 /* Two Footer Widget Areas */
@@ -2623,9 +2631,9 @@ p.comment-form-comment {
 	}
 }
 @media (max-width: 650px) {
-	/* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
+	/* @media (max-width: 650px) change font-sizes on smaller devices, if you want to */
 	body, input, textarea {
-		font-size: 13px;
+
 	}
 	#site-title a {
 		font-size: 24px;
@@ -2643,7 +2651,7 @@ p.comment-form-comment {
 		font-size: 12px;
 	}
 	.entry-title {
-		font-size: 21px;
+		font-size: 1.6rem;
 	}
 	.featured-post .entry-title {
 		font-size: 14px;
