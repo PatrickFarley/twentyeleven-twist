@@ -541,7 +541,7 @@ input[type=email],
 input[type=url],
 input[type=number],
 textarea {
-	background: #fafafa;
+	background: #cccccc;
 	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
@@ -2379,7 +2379,7 @@ a.comment-reply-link > span {
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
 }
 #respond input#submit:active {
-	background: #1982d1;
+	background:var(--accent);
 	color: #bfddf3;
 }
 #respond #cancel-comment-reply-link {
