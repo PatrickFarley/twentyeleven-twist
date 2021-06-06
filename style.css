@@ -413,11 +413,11 @@ input,
 textarea {
 	color: #373737;
 	line-height: 1.625;
-	font-family: "Fakt Pro Lt","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Fakt Pro Lt", "Open Sans", "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .blog article.post,
 .blog #content {
-	font-family: "Warnock Pro", "Palatino Linotype", "Times New Roman", serif;
+	font-family: "Warnock Pro", "Palatino Linotype", "Georgia", "Times New Roman", serif;
 }
 body {
 	background: #e2e2e2;
@@ -642,12 +642,12 @@ a:hover {
 
 #site-title a { /* the element of 'a' type with an id of "site-title' */
 	font-weight: normal;
-	font-family: "Warnock Pro Light Display", "Palatino Linotype", "Times New Roman", serif;
+	font-family: "Warnock Pro Light Display", "Palatino Linotype", "Georgia" "Times New Roman", serif;
 }
 .blog .entry-title,
 .blog .entry-title a {
 	font-weight: normal;
-	font-family: "Warnock Pro Light", "Palatino Linotype", "Times New Roman", serif;
+	font-family: "Warnock Pro Light", "Palatino Linotype", "Georgia", "Times New Roman", serif;
 }
 
 
