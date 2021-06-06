@@ -631,6 +631,7 @@ a:hover {
 #site-title {
 	margin-right: 270px;
 	padding: 2em 0 0;
+	text-shadow: 1px 1px #000000;
 }
 #site-title a {
 	color: #111;
@@ -2512,7 +2513,7 @@ p.comment-form-comment {
 @media (max-width: 800px) {
 	/* Simplify the basic layout */
 	#main #content {
-		margin: 0 7.6%;
+		margin: 0 3%;
 		width: auto;
 	}
 	#nav-below {
@@ -2661,7 +2662,7 @@ p.comment-form-comment {
 	}
 	/* Reposition the site title and description slightly */
 	#site-title {
-		padding: 5.30625em 0 0;
+		padding: 5% 0 0;
 	}
 	#site-title,
 	#site-description {
@@ -2750,9 +2751,6 @@ p.comment-form-comment {
 	}
 	#branding {
 		border-top: none;
-	}
-	.blog #branding #access {
-		margin-top: 30%;
 	}
 }
 
