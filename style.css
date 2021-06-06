@@ -15,7 +15,7 @@ Text Domain: twentyeleven
 
 @font-face {
 	font-family: "Warnock Pro";
-	src: url("fonts/warnockpro.otf") format("opentype");
+	src: url("fonts/WarnockPro-Regular.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
