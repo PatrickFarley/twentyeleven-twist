@@ -668,6 +668,12 @@ a:hover {
 	width: 100%;
 }
 
+/* header on single pages: enforce height restriction*/
+.single #branding img {
+	height: 288px;
+	object-fit: cover;
+}
+
 
 /* =Menu
 -------------------------------------------------------------- */
