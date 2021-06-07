@@ -106,8 +106,7 @@ if ( is_singular() && get_option( 'thread_comments' ) ) {
 				 * Check if this is a post or page, if it has a thumbnail, and if it's a big one
 				 */
 				if ( is_singular() && has_post_thumbnail( $post->ID ) &&
-						( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( $header_image_width, $header_image_width ) ) ) &&
-						$image[1] >= $header_image_width ) :
+						( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( $header_image_width, $header_image_width ) ) )  ) :
 					// Houston, we have a new header image!
 					echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
 				else :
