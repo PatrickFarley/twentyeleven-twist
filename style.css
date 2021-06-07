@@ -629,7 +629,7 @@ a:hover {
 	z-index: 9999;
 }
 #site-title {
-	margin-right: 270px;
+	margin: 0 0 0.5em 4%;
 	padding: 2em 0 0;
 	text-shadow: 1px 1px #000000;
 }
@@ -2679,7 +2679,6 @@ p.comment-form-comment {
 	#site-title,
 	#site-description {
 		font-size: 20px;
-		margin: 0 0 0.5em 4%;
 	}
 	/* Make sure the logo and search form don't collide */
 	#branding #searchform {
@@ -2765,6 +2764,7 @@ p.comment-form-comment {
 		border-top: none;
 	}
 }
+
 
 
 /* =Print
