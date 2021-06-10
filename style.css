@@ -2452,8 +2452,10 @@ p.comment-form-comment {
 	clear: both;
 }
 #supplementary {
-	border-top: 1px solid #ddd;
-	padding: 1.625em 7.6%;
+    padding-top: 0;
+    padding-right: 7.6%;
+    padding-bottom: 1.625em;
+	padding-left: 7.6%;
 	overflow: hidden;
 	text-align: center;
 }
