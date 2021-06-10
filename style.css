@@ -624,7 +624,7 @@ a:hover {
 
 #branding {
 	border-top: 2px solid #bbb;
-	padding-bottom: 10px;
+
 	position: relative;
 	z-index: 9999;
 }
@@ -2524,6 +2524,16 @@ p.comment-form-comment {
 
 @media (max-width: 800px) {
 	/* Simplify the basic layout */
+
+	/* header on single pages: enforce height restriction*/
+	.single #branding img {
+		height: 144px;
+		object-fit: cover;
+	}
+	/* undo top margin, since mobile bar appears */
+	#page {
+		margin-top: auto;
+	}
 	#main #content {
 		margin: 0 3%;
 		width: auto;
@@ -2639,6 +2649,7 @@ p.comment-form-comment {
 	body, input, textarea {
 
 	}
+	
 	#site-title a {
 		font-size: 24px;
 	}
