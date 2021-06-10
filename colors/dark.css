@@ -630,7 +630,7 @@ li.bypostauthor a.comment-reply-link:active {
 
 	/* Post author highlighting */
 	.commentlist > li.bypostauthor {
-		color: #333;
+		color: #222;
 	}
 	.commentlist > li.bypostauthor .comment-meta {
 		color: #959595;
