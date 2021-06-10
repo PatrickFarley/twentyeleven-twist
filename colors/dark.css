@@ -175,7 +175,7 @@ a {
 
 /* Images */
 .wp-caption {
-	background: #2c2c2c;
+	background: #222222;
 }
 .wp-caption .wp-caption-text {
 	color: #999;
@@ -187,22 +187,22 @@ a {
 /* Image borders */
 img[class*="wp-image-"],
 #content .gallery .gallery-icon img {
-	border-color: #2c2c2c;
+	border-color: #222222;
 }
 .wp-caption img {
-	border-color: #2c2c2c;
+	border-color: #222;
 }
 a:focus img[class*="wp-image-"],
 a:hover img[class*="wp-image-"],
 a:active img[class*="wp-image-"] {
-	background: #2c2c2c;
+	background: #222;
 	border-color: #444;
 }
 .wp-caption a:focus img,
 .wp-caption a:active img,
 .wp-caption a:hover img {
 	background: #0f0f0f;
-	border-color: #2c2c2c;
+	border-color: #222;
 }
 
 /* Password Protected Posts */
@@ -418,7 +418,7 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 .image-attachment div.attachment a:focus img,
 .image-attachment div.attachment a:hover img,
 .image-attachment div.attachment a:active img {
-	border-color: #2c2c2c;
+	border-color: #222;
 	background: var(--bgcolor);
 }
 
@@ -517,7 +517,7 @@ li.bypostauthor a.comment-reply-link:active {
 /* Post author highlighting */
 .commentlist > li.bypostauthor {
 	background: #222;
-	border-color: #2c2c2c;
+	border-color: #333;
 }
 .commentlist > li.bypostauthor:before {
 	content: url(../images/comment-arrow-bypostauthor-dark.png);
@@ -529,7 +529,7 @@ li.bypostauthor a.comment-reply-link:active {
 /* Post Author threaded comments */
 .commentlist .children > li.bypostauthor {
 	background: #222;
-	border-color: #2c2c2c;
+	border-color: #333;
 }
 .commentlist > li.bypostauthor .comment-meta {
 	color: #a8a8a8;
@@ -538,7 +538,7 @@ li.bypostauthor a.comment-reply-link:active {
 /* Comment Form */
 #respond {
 	background: #222;
-	border-color: #2c2c2c;
+	border-color: #333;
 }
 #respond input[type="text"],
 #respond textarea {
