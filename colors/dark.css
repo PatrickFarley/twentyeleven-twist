@@ -6,6 +6,8 @@
 ------------------------------------*/
 :root {
 	--bgcolor: #090909;
+	--textcolor: #dddddd;
+	--nerfcolor: #bbb;
 }
 
 /* =Global
@@ -13,7 +15,7 @@
 
 body {
 	background: var(--bgcolor);
-	color: #bbb;
+	color: var(--textcolor);
 }
 #page {
 	background: var(--bgcolor);
@@ -104,14 +106,14 @@ a {
 }
 
 .page-title {
-	color: #ccc;
+	color: var(--textcolor);
 }
 .hentry {
 	border-color: #222;
 }
 .entry-title,
 .entry-title a {
-	color: #ddd;
+	color: var(--textcolor);
 }
 .entry-title a:hover,
 .entry-title a:focus,
@@ -144,7 +146,7 @@ a {
 }
 .page-link a {
 	background: #242424;
-	color: #bbb;
+	color: var(--textcolor);
 }
 .page-link a:hover {
 	background: #999;
@@ -152,7 +154,7 @@ a {
 }
 .entry-meta .edit-link a {
 	background: #242424;
-	color: #bbb;
+	color: var(--textcolor);
 }
 .entry-meta .edit-link a:hover,
 .entry-meta .edit-link a:focus,
@@ -291,7 +293,7 @@ a:active img[class*="wp-image-"] {
 ----------------------------------------------- */
 
 h1.showcase-heading {
-	color: #ccc;
+	color: var(--textcolor);
 }
 
 /* Intro */
@@ -388,14 +390,14 @@ section.recent-posts .other-recent-posts .entry-title {
 	border-color: #222;
 }
 section.recent-posts .other-recent-posts a[rel="bookmark"] {
-	color: #ccc;
+	color: var(--nerfcolor);
 }
 section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
 }
 section.recent-posts .other-recent-posts .comments-link a,
 section.recent-posts .other-recent-posts .comments-link > span {
 	border-color: #959595;
-	color: #bbb;
+	color: var(--nerfcolor);
 }
 section.recent-posts .other-recent-posts .comments-link > span {
 	border-color: #444;
@@ -425,12 +427,15 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 
 /* =Widgets
 ----------------------------------------------- */
+.widget {
+	color: var(--nerfcolor);
+}
 
 .widget-title {
-	color: #ccc;
+	color: var(--nerfcolor);
 }
 .widget ul li {
-	color: #888;
+	color: var(--nerfcolor);
 }
 
 /* Search Widget */
@@ -467,7 +472,7 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 ----------------------------------------------- */
 
 #comments-title {
-	color: #bbb;
+	color: var(--textcolor);
 }
 .nocomments {
 	color: #555;
@@ -493,7 +498,7 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 }
 a.comment-reply-link {
 	background: #242424;
-	color: #bbb;
+	color: var(--textcolor);
 }
 li.bypostauthor a.comment-reply-link {
 	background: #111;
@@ -547,7 +552,7 @@ li.bypostauthor a.comment-reply-link:active {
 	-webkit-box-shadow: inset 0 1px 3px rgba(51,51,51,0.95);
 	-moz-box-shadow: inset 0 1px 3px rgba(51,51,51,0.95);
 	box-shadow: inset 0 1px 3px rgba(51,51,51,0.95);
-	color: #bbb;
+	color: var(--textcolor);
 }
 #respond .comment-form-author label,
 #respond .comment-form-email label,
@@ -586,7 +591,7 @@ li.bypostauthor a.comment-reply-link:active {
 	color: #999;
 }
 #reply-title {
-	color: #ccc;
+	color: var(--textcolor);
 }
 #cancel-comment-reply-link {
 	color: #777;
