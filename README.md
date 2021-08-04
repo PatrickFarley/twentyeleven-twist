@@ -9,6 +9,7 @@ This is a custom theme based on TwentyEleven. Not a child theme - it doesn't imp
 Warnock-pro for blog. Then sub for a [Palatino variant](https://practicaltypography.com/palatino-alternatives.html#)
 
 Venetian is most classical looking, but it's not the right vibe for this site. A faint neo-renaissance vibe is more appropriate.
+Adobe Garamond Pro is a good backup serif font.
 
 ## Colors
 
