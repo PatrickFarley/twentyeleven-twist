@@ -1870,7 +1870,12 @@ section.recent-posts .other-recent-posts li:after {
 	text-transform: uppercase;
 }
 
-
+/* display post thumbnails at appropriate size */
+#content .attachment-post-thumbnail {
+	width: 50%;
+	height: 70px;
+	object-fit: cover;
+}
 
 /* =Media
 -------------------------------------------------------------- */
