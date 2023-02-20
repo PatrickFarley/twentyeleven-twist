@@ -15,6 +15,8 @@ Adobe Garamond Pro is a good backup serif font.
 
 high-contrast color scheme layout: https://paletton.com/#uid=c3x0I5p1E0khcLwjIu1+UV8kgjc80++
 
+The Custom Highlight Color plugin is in use.
+
 ## Structure files
 
 ### Stylesheets
@@ -31,10 +33,12 @@ Define the structure of different page types. Define how to read from the databa
 
 Self-contained; ideally you don't have to use style.css to tweak widget appearances.
 
+The Classic Widgets plugin is in use bc the block editor does poorly with legacy widgets.
+
 ## Layout
 
 ### Mobile handling
 
 The big layout change happens at sub-800px width: the sidebar pushed under. single-post header images get cropped shorter.
 
-The Mobile Menu Options widget activates at 800px, but only on devices that are detected to be mobile. This widget adds the sticky mobile hamburger menu, and hides the original site title and nav menu. It adds an aesthetic bottom border to the header image (appearing in place of the nav menu). 
+The Mobile Menu Options plugin widget activates at 800px, but only on devices that are detected to be mobile. This widget adds the sticky mobile hamburger menu, and hides the original site title and nav menu. It adds an aesthetic bottom border to the header image (appearing in place of the nav menu). 
