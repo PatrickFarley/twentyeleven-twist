@@ -589,6 +589,18 @@ input#searchsubmit {
 	display: none;
 }
 
+/* custom button colors */
+button, button:focus input[type="button"], input[type="button"]:focus, input[type="submit"], input[type="submit"]:focus, input.button.gform_button, input.button.gform_button:focus, #searchsubmit, #searchsubmit:focus, #site-mobile-menu-toggle .toggle-anchor, .wp-block-button .wp-block-button__link {
+
+	background-color: var(--textcolor);
+    color: black;
+}
+
+#site-nav-main .menu-item a:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover, input.button.gform_button:hover, input.button.gform_button:focus, #searchsubmit:hover, #site-mobile-menu-toggle .toggle-anchor:hover, #site-mobile-menu-toggle .toggle-anchor:focus, .wp-block-button .wp-block-button__link:hover {
+    background-color: var(--faintaccent);
+    color: black;
+}
+
 /* Links */
 a {
 	color: var(--accent);
