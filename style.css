@@ -204,6 +204,13 @@ Percents are of the parent frame. */
 	margin-right: 0;
 	width: 20%;
 }
+/* within the right content setting, we still want a designated "full-width"
+ * template. so target that css class and change the margins and width.
+ */
+.page-template-full-width #content {
+	margin: 0 10% 0 10%;
+	width: 80%;
+}
 
 
 /* One column */
