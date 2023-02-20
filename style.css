@@ -604,12 +604,13 @@ button, button:focus input[type="button"], input[type="button"]:focus, input[typ
 /* Links */
 a {
 	color: var(--accent);
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-line: underline;
 }
 a:focus,
 a:active,
 a:hover {
-	text-decoration: underline;
+	color:white;
 }
 
 /* Assistive text */
