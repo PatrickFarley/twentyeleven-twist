@@ -422,9 +422,11 @@ textarea {
 	line-height: 1.625;
 	font-family: "Fakt Pro Lt", "Open Sans", "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+/* the serif font gets a relative size boost for better readability */
 .blog article.post,
 .blog #content {
 	font-family: "Warnock Pro", "Palatino Linotype", "Georgia", "Times New Roman", serif;
+	font-size: 1.10em;
 }
 body {
 	background: #e2e2e2;
@@ -1867,6 +1869,8 @@ section.recent-posts .other-recent-posts li:after {
 	margin: 0 0 2.6em;
 	text-transform: uppercase;
 }
+
+
 
 /* =Media
 -------------------------------------------------------------- */
